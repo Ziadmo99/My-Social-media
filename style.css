@@ -1,102 +1,76 @@
-*{
-  font-family: sans-serif;
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --OffBlack: hsl(0, 0%, 8%);
 }
+
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* @font-face {
+  font-family: "font";
+  src: url("social-links-profile-main/assets/fonts/Inter-VariableFont_slnt-wght.ttf");
+} */
+
 body {
-  background-color: #000000ed;
+  background-color: var(--OffBlack);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container {
   margin-top: 50px;
-  background-color: rgb(33 33 33);
+  background-color: var(--DarkGrey);
   border-radius: 20px;
   width: 350px;
   padding: 50px;
 }
+
 .img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .Image {
   border-radius: 50%;
   width: 100px;
 }
-.name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.name1 {
-  margin-bottom: 0px;
-  color: white;
-}
-.address {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.address1 {
-  font-size: medium;
-  margin-top: 6px;
-  color: #9ad727;
-}
+
+.name,
+.address,
 .job {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.name1 {
+  margin-bottom: 0px;
+  color: white;
+}
+
+.address1 {
+  font-size: medium;
+  margin-top: 6px;
+  color: var(--Green);
+}
+
 .job1 {
   color: white;
   font-size: small;
 }
 
-.github1 {
-  background-color: rgb(57 56 56);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  padding: 15px;
-  border-radius: 7px;
-  cursor: pointer;
-  /* --------------- */
-  color: white;
-  text-decoration: none;
-  transition-duration: 0.4s;
-}
-
-.facebook1 {
-  background-color: rgb(57 56 56);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  padding: 15px;
-  border-radius: 7px;
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
-  transition-duration: 0.4s;
-}
-
-.spotify1 {
-  background-color: rgb(57 56 56);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  padding: 15px;
-  border-radius: 7px;
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
-  transition-duration: 0.4s;
-}
-
+.github1,
+.facebook1,
+.insta1,
+.snapchat1,
 .twitter1 {
-  background-color: rgb(57 56 56);
+  background-color: rgb(57, 56, 56);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,37 +83,12 @@ body {
   transition-duration: 0.4s;
 }
 
-.insta1 {
-  background-color: rgb(57 56 56);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  padding: 15px;
-  border-radius: 7px;
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
-  transition-duration: 0.4s;
-}
-.github1:hover {
-  background-color: #9ad727;
-  color: rgb(57 56 56);
-}
-
-.spotify1:hover {
-  background-color: #9ad727;
-  color: rgb(57 56 56);
-}
-.twitter1:hover {
-  background-color: #9ad727;
-  color: rgb(57 56 56);
-}
-.facebook1:hover {
-  background-color: #9ad727;
-  color: rgb(57 56 56);
-}
+.github1:hover,
+.snapchat1:hover,
+.twitter1:hover,
+.facebook1:hover,
 .insta1:hover {
-  background-color: #9ad727;
-  color: rgb(57 56 56);
+  background-color: var(--Green);
+  color: var(--Grey);
 }
+
